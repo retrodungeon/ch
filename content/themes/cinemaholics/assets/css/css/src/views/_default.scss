@@ -1,0 +1,107 @@
+.slider {
+  max-height: 530px;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+button.more {
+  color: #212020;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  border: 2px solid #212020;
+  padding: 17px 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: transparent;
+  font-family: 'proxima_nova_rgbold';
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #212020;
+    color: #fff;
+  }
+}
+
+.sidebar1 .last {
+  border-bottom: 0px solid #e8e8e8;
+}
+
+.banner {
+  width: 100%;
+}
+
+.mateblock {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6%;
+}
+
+.type {
+  padding: 3px 5px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'proxima_nova_rgbold';
+  position: absolute;
+  transform: rotate(-90deg);
+  text-transform: capitalize;
+  bottom: 0px;
+  left: 25px;
+  height: 25px;
+  line-height: 17px;
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+
+.post-title {
+  margin: 0px 20px 10px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #212020;
+  font-family: 'proxima_nova_rgbold';
+}
+
+.comme {
+  position: absolute;
+  left: 20px;
+  height: 21px;
+  width: 53px;
+  background-image: url(../comments.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  bottom: 15px;
+  color: #b2b2b2;
+}
+
+.mateblock .blockbig:nth-child(2n+1) {
+  margin-right: 0%;
+}
+
+.mobileblock {
+  display: none;
+}
+
+.post__image {
+  height: 225px;
+  line-height: 225px;
+  overflow: hidden;
+
+  img {
+    vertical-align: middle;
+  }
+}

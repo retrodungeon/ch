@@ -1,0 +1,54 @@
+.poster {
+  position: relative;
+  padding: 130px 20px 22px 11px;
+  background-image: url(../rekblock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media(min-width: 1366px) {
+    padding: 145px 27px 25px 15px;
+  }
+
+
+  &__content {
+    display: block;
+    background-color: white;
+    color: #32e49b;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'proxima_nova_rgbold';
+    text-decoration: none !important;
+
+    figure {
+      margin: 0;
+      height: 225px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    h2 {
+      padding: $spacing-extralarge   0 $spacing-extralarge;
+      margin: 0;
+
+      font-size: 22px;
+
+      text-decoration: none;
+    }
+
+    h4 {
+      color: green;
+      margin: 0;
+      padding-bottom: $spacing-extralarge;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.fullnew .type {
+  background-color: transparent;
+  color: #fff;
+  transform: rotate(0deg);
+  top: 25px;
+  left: 25px;
+  text-transform: uppercase;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.fullnew .type > a {
+  color: white;
+}
+
+.fulltext {
+  padding: 4%;
+  font-size: 18px;
+  line-height: 1.625;
+
+  p, ul{
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media(min-width: 1366px) {
+      max-width: 800px;
+    }
+  }
+
+  a {
+    display: inline;
+    border-bottom: solid 1px black;
+
+    &:hover { border-bottom: none; }
+  }
+}
+
+.fulltext img {
+  width: 100%;
+  margin: 15px 0px;
+}
+
+blockquote {
+  position: relative;
+  display: block;
+  font-style: italic;
+  padding: 15px 0px;
+  color: #989898;
+}
+
+blockquote:before {
+  color: #989898;
+  content: "\201C";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -.4em;
+  font-family: georgia;
+}
+
+blockquote:after {
+  color: #989898;
+  content: "\201D"; /* Непечатаемый символ справа */
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -.45em;
+  font-family: georgia;
+}
+
+blockquote > p:first-child {
+  display: inline;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  margin: $base-spacing 0;
+  overflow: hidden;
+}
+.autor {
+  color: #989898;
+  margin-top: 30px;
+}
+.author .text > a  {
+  color: white;
+}
+a.feeadback {
+  max-width: 180px;
+  text-align: center;
+  color: #ababab;
+  background-color: #343434;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  margin-bottom: 48px;
+}
+a.copyright {
+  color: #ababab;
+}
+.inside {
+  margin-bottom: 10px;
+}
+.commen {
+  padding: 20px 20px;
+  margin-bottom: 70px;
+}
+.zatem {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.video-container embed, .video-container iframe, .video-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.entry-content .video-container embed, .entry-content .video-container iframe, .entry-content .video-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

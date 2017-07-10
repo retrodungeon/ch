@@ -1,0 +1,56 @@
+<!--<div class="nav">-->
+    <!--<h3 class="nav-title">Menu</h3>-->
+    <!--<a href="#" class="nav-close">-->
+        <!--<span class="hidden">Close</span>-->
+    <!--</a>-->
+    <!--<ul>-->
+        <!--{{#foreach navigation}}-->
+            <!--<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>-->
+        <!--{{/foreach}}-->
+    <!--</ul>-->
+    <!--{{#if @labs.subscribers}}-->
+        <!--<a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>-->
+    <!--{{else}}-->
+        <!--<a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>-->
+    <!--{{/if}}-->
+<!--</div>-->
+<!--<span class="nav-cover"></span>-->
+
+<!-- Header -->
+<div id="navigation" class="header clearfloat2">
+    <section class="header-container">
+        {{#if @blog.logo}}
+            <a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+        {{/if}}
+        <div class="menu">
+            {{#foreach navigation}}
+                <a href="{{url absolute="true"}}">{{label}}</a>
+            {{/foreach}}
+            <button type="button" class="search-init js-searchStart">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <!-- Search -->
+        <section class="search-overlay js-searchOverlay">
+            <form id="search" class="search-overlay__form search-container js-searchContainer">
+                <input type="search" class="search-container__input js-searchInput" placeholder="Search">
+                <div class="search-container__results overlay">
+                    <ul class="search-results js-searchResults">
+                    </ul>
+                </div>
+            <img class="search-container__loading js-loadingSpin" src="{{asset "icons/loading.gif"}}" />
+            </form>
+            <button type="button" class="search-overlay__close js-searchClose">
+                <i class="fa fa-close"></i>
+            </button>
+        </section>
+        <!-- end Search-->
+        <div class="menu-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    <!-- end .header -->
+    </section>
+</div>
+<!-- End Header -->
