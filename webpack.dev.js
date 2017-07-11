@@ -3,8 +3,7 @@ var webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development"
+    filename: "[name].css"
 });
 
 var APP_NAME = 'main';
@@ -41,7 +40,8 @@ module.exports = {
               use: extractSass.extract({
                   use: [{
                       loader: "css-loader", options: {
-                          sourceMap: true
+                          sourceMap: true,
+                          url: false
                       }
                   }, {
                       loader: "sass-loader", options: {
