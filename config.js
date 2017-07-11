@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'beta.cinemaholics.ru',
+        url: 'localhost',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -23,7 +23,7 @@ config = {
 
         server: {
             host: '127.0.0.1',
-            port: '1337'
+            port: '2277'
         }
     },
 

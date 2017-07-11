@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -78,19 +78,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.splitDateAndTitle = exports.insertPost = exports.hideMainBanner = undefined;
 
-var _hideMainBanner = __webpack_require__(3);
+var _hideMainBanner = __webpack_require__(2);
 
-var _insertPost = __webpack_require__(4);
+var _insertPost = __webpack_require__(3);
 
-var _splitDateAndTitle = __webpack_require__(5);
+var _splitDateAndTitle = __webpack_require__(4);
 
 exports.hideMainBanner = _hideMainBanner.hideMainBanner;
 exports.insertPost = _insertPost.insertPost;
 exports.splitDateAndTitle = _splitDateAndTitle.splitDateAndTitle;
 
 /***/ }),
-/* 1 */,
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109,7 +108,7 @@ function convertDate(dateString) {
 }
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -133,7 +132,7 @@ function hideMainBanner() {
 }
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -144,7 +143,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.insertPost = insertPost;
 
-var _convertDate = __webpack_require__(2);
+var _convertDate = __webpack_require__(1);
 
 function insertPost(postData, options) {
   //start the inserting of the html
@@ -164,7 +163,7 @@ function insertPost(postData, options) {
 }
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -192,7 +191,7 @@ function splitDateAndTitle() {
 }
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
