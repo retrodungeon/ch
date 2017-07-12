@@ -21,9 +21,8 @@
     "preinstall": "node core/server/utils/npm/preinstall.js",
     "start": "node index",
     "test": "grunt validate --verbose",
-    "prebuild": "cd content/themes/cinemaholics npm install",
-    "build": "webpack --config webpack.prod.js",
-    "watch": "webpack --config webpack.dev.js --watch"
+    "build": "node_modules/.bin/webpack --config webpack.prod.js",
+    "watch": "node_modules/.bin/webpack --config webpack.dev.js --watch"
   },
   "engines": {
     "node": "^4.2.0 || ^6.9.0"
