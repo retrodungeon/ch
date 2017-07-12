@@ -1,4 +1,5 @@
 import {hideMainBanner, insertPost, splitDateAndTitle} from './helpers';
+import './modules/search';
 
 $(document).ready(() => {
   splitDateAndTitle();
@@ -74,64 +75,6 @@ $('.js-toggleBanner').on('click', function () {
     window.localStorage.setItem('mainImgSrc', src);
   }
 });
-
-$('.js-searchStart').on('click', function () {
-  $('.js-searchOverlay').show();
-  $('body').addClass('pmt');
-  $('.js-searchInput').focus();
-});
-
-$('.js-searchClose').on('click', function () {
-  $('.js-searchOverlay').hide();
-  $('body').removeClass('pmt');
-  $('.js-loadingSpin').hide();
-  $('.js-searchResults').empty();
-  $('.js-searchInput').val('');
-});
-
-$('#search').on('submit', function (e) {
-  var value = $('.js-searchInput').get(0).value;
-  $('.js-searchResults').empty();
-  e.preventDefault();
-
-  $('.js-loadingSpin').show();
-
-  $.ajax({
-    url: ghost.url.api("posts", {
-      limit: "all",
-      order: "published_at desc",
-      fields: "title,url,published_at"
-    }),
-    type: 'get'
-  })
-    .done(function (data) {
-      $('.js-loadingSpin').hide();
-      var found = data.posts.filter(function (post) {
-        return post.title.toLowerCase().indexOf(value) !== -1;
-      });
-
-      $('.js-searchResults').empty();
-      if (found.length) {
-        found.forEach(function (item) {
-          $('.js-searchResults').append(insertPost(item, {
-            includeTags: false,
-            includeDate: true,
-            addClass: 'block--search'
-          }));
-        });
-      } else {
-        $('.js-searchResults').append('ничего');
-      }
-    })
-});
-
-$('.js-searchInput')
-  .on('focusin', function () {
-    $('#search').addClass('js-isActive');
-  })
-  .on('focusout', function () {
-    $('#search').removeClass('js-isActive');
-  });
 
 $('img').parent('p').addClass('picture');
 $('.cite').parent('p').addClass('paragraph--has-cite');
