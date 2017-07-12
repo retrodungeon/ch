@@ -1,3 +1,5 @@
 .idea
 assets/css/screen.css
+content/data
+content/images
 npm-debug.log
