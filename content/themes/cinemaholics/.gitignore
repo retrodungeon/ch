@@ -1,6 +1,6 @@
 .idea
 assets/css/screen.css
-content/data/
-content/images/
+data/
+images/
 npm-debug.log
-.DS_Store
+**/.DS_Store
