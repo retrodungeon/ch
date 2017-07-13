@@ -48,13 +48,6 @@
   &.post.featured {
     margin-bottom: 6%;
   }
-	margin-bottom: 0;
-	webkit-transition: all 0.2s, -webkit-transform 0.2s;
-	transition: all 0.2s, transform 0.2s;
-}
-.post-title:hover{
-	color: #1ed2cc;
-}
 
   &--search {
     max-width: 100%;
@@ -349,8 +342,15 @@ a.copyright {
 }
 
 .post {
-  &-title {
-    font-size: 16px;
-    margin: 0 20px 10px 20px;
-  }
+    &-title {
+        font-size: 16px;
+        margin: 0 20px 10px 20px;
+
+        webkit-transition: all 0.2s, -webkit-transform 0.2s;
+        transition: all 0.2s, transform 0.2s;
+
+        &:hover {
+            color: #1ed2cc;
+        }
+    }
 }
