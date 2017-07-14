@@ -1,5 +1,5 @@
 .button {
-    color: #212020;
+    color: #212020 !important;
     text-transform: uppercase;
     width: 100%;
     display: block;
@@ -14,10 +14,10 @@
     cursor: pointer;
     text-decoration:none !important;
     border: 2px solid #212020;
-
+    
     &:hover {
         background-color: #212020;
-        color: #fff;
+        color: #fff !important;
         text-decoration:none;
     }
 
