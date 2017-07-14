@@ -17,7 +17,7 @@ $(document).ready(() => {
     id = pathParts[2];
 
   if (path.length <= 1) {
-    limit = 12;
+    limit = 10;
   } else if (page == 'tag') {
     filter += "+tag:" + id;
   } else if (page == 'author') {
