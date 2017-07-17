@@ -167,6 +167,10 @@
   font-size: 18px;
   line-height: 1.625;
 
+  article {
+    display: none;
+  }
+
   p, ul, h1, h2, h3, h4, h5, em {
     text-transform: none;
     max-width: 600px;

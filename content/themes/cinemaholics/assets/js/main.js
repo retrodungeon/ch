@@ -1,5 +1,6 @@
 import {hideMainBanner, insertPost, splitDateAndTitle} from './helpers';
 import './modules/search';
+import './modules/scroll';
 
 $(document).ready(() => {
   splitDateAndTitle();

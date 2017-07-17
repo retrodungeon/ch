@@ -2,7 +2,7 @@ import {convertDate} from './convertDate';
 
 export function insertPost(postData, options) {
   //start the inserting of the html
-  let postExcerpt = $(postData.html).text().slice(0, 200);
+  let postExcerpt = $(postData.html).text().split(' ').slice(0, 20).join(' ');
 
   let tagText = options ? options.includeTags ?
     `<span class="type"> 

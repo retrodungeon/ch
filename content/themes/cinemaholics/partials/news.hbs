@@ -1,4 +1,4 @@
-<div class="sidebar1">
+<div id="news" class="sidebar1">
     <h2>Новости</h2>
     <!-- news block daily-->
     {{#get "posts" filter="tags:newsblock+image:-null" limit="10" order="published_at desc"}}
@@ -10,7 +10,7 @@
                 </a>
             </div>
         {{/foreach}}
-        <a href="/tag/newsblock" class="button">
+        <a href="/tag/newsblock" class="button" target="_blank">
             <span>еще новости</span>
         </a>
     {{/get}}
