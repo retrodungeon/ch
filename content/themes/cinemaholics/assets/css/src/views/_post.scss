@@ -45,6 +45,10 @@
   position: relative;
   margin-bottom: 6%;
   
+  .full & {
+    width: 23%;
+  }
+
   &.post.featured {
     margin-bottom: 6%;
   }
