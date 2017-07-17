@@ -4,12 +4,8 @@
 	-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.15);
 	-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.15);
 	box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.15);
-
-  @media(min-width: 1366px) {
-    padding: 145px 27px 25px 15px;
-  }
   
-  @media(max-width:1280x) {
+  @media(max-width: 1280x) {
 		padding: 10px;
 	}
 
