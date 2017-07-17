@@ -51,6 +51,11 @@
 
   &.full {
     margin: 0;
+
+    .button.more {
+      max-width: 46%;
+      margin: 0 auto;
+    }
   }
 
 }
