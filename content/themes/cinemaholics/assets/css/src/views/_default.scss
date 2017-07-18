@@ -25,7 +25,7 @@
   margin-bottom: 6%;
 }
 
-.type {
+/*.type {
   padding: 3px 5px;
   background-color: #000;
   color: #fff;
@@ -42,7 +42,7 @@
   -o-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
-}
+}*/
 
 .post-header {
   height: 345px;
@@ -84,8 +84,8 @@
   img {
     vertical-align: middle;
     position: absolute;
-    top: 50%;
+  /*top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
   }
 }
