@@ -8,7 +8,7 @@ $(document).ready(() => {
   //This is set to 2 since the posts already loaded should be page 1
   var nextPage = 2,
     //Set this to match the pagination used in your blog
-    limit = 10,
+    limit = 11,
     filter = "image:-null";
 
   // if homepage

@@ -51,6 +51,14 @@ font-family: 'proxima_nova_rgbold';
   
   .full & {
     width: 23%;
+
+    @media(max-width:1160px) {
+      width: 47%;
+    }
+
+    @media(max-width:800px) {
+      width: 100%;
+    }
   }
 
   &.post.featured {
