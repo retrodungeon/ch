@@ -34,6 +34,10 @@ font-family: 'proxima_nova_rgbold';
     -ms-transform-origin: 0% 100%;
     transform-origin: 0% 100%;
     text-align: right;
+
+    .featured & {
+      top: -30px;
+    }
 }
 
 .fullnew .type > a {
@@ -63,6 +67,10 @@ font-family: 'proxima_nova_rgbold';
 
   &.post.featured {
     margin-bottom: 6%;
+
+    .type {
+      top: -30px;
+    }
   }
 
   &--search {
