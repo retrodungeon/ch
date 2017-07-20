@@ -61,7 +61,7 @@
   }
 }
 
-@media all and (max-width:1025px) {
+@media all and (max-width:1160px) {
   .footer .logosmall img {
     width: 100%;
   }
@@ -79,7 +79,7 @@
   .block {
     max-width: 900px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 6%;
   }
   .mateblock {
     display: block;
@@ -290,8 +290,16 @@
   }
 
   .fullnew .type {
-    top: 10px;
-    left: 10px;
+    /*top: 10px;
+    left: 10px;*/
+	font-size: 14px;
   }
+}
+
+@media all and (max-width:560px) {
+	.fullnew .type {
+	    left: 4.5%;
+		top: 25px
+	}
 }
 /* MEDIA */
