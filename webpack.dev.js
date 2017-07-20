@@ -40,12 +40,11 @@ module.exports = {
               use: extractSass.extract({
                   use: [{
                       loader: "css-loader", options: {
-                          sourceMap: true,
                           url: false
                       }
                   }, {
                       loader: "sass-loader", options: {
-                          sourceMap: true
+                        
                       }
                   }],
                   // use style-loader in development
