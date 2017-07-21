@@ -89,6 +89,37 @@
     margin-right: 2px;
   }
 }
+	@media all and (max-width:1170px) {
+		.menu {
+			visibility: hidden;
+			margin-top: -9000px;
+		}
+		.menu-button {
+			padding: 18px;
+			display: block;
+		}
+		.search-init {
+			display: none;
+		}
+		body.pmt div.menu {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			min-height: 500px;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 3;
+			overflow: hidden;
+			margin-left: 0;
+			background-color: #fbfbfb;
+			padding-top: 73px;
+			padding-bottom: 144px;
+			visibility: visible;
+			margin-top: 0px;
+			padding-right: 0px;
+		}
+	}
 @media all and (max-width:975px) {
   .menu-button {
     padding: 18px;
