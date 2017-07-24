@@ -59,7 +59,6 @@ $('.menu-button').on('click', function() {
   $('body').toggleClass('pmt');
   let menu_oheight = nav.outerHeight(),
     menu_iheight = $('div.menu a:last-child').position();
-  console.log(menu_iheight, link_pad);
 });
 
 $('.js-toggleBanner').on('click', function () {

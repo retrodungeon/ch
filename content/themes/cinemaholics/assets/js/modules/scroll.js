@@ -13,8 +13,6 @@ window.addEventListener('scroll', () => {
         
         let windowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        console.log(bottomCache, newsBottom, windowScrollTop, latestPostBottom);
-        
         if (!bottomCache && newsBottom < 0) {
             bottomCache = newsBottom + windowScrollTop;
         }
