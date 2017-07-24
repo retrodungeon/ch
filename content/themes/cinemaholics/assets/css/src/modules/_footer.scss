@@ -10,6 +10,7 @@
   color: #707070;
   font-size: 16px;
   padding: 6px 20px 20px 20px;
+    font-family: 'proxima_nova_rgregular';
 }
 .footer .logosmall {
   display: block;
@@ -30,6 +31,7 @@
   margin-top: 10px;
 }
 .footer .sidebar2 {
+display: none;
 }
 .prefot {
   max-width: 1700px;
@@ -47,4 +49,5 @@
   display: inline-block;
   padding-bottom: 80px;
   border-bottom: 1px solid #3b3b3b;
+  font-family: 'proxima_nova_rgregular';
 }
